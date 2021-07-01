@@ -34,7 +34,5 @@
 </script>
 
 <style scoped>
-  .bg-dark {
-    /* background-color: #333 !important; */
-  }
+  
 </style>

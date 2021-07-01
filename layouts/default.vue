@@ -4,11 +4,10 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-8 mt-5">
-          <Nuxt />
-        </div>
+         <Nuxt />
       </div>
     </div>
+    
   </div>
 </template>
 
