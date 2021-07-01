@@ -127,8 +127,21 @@ export const state = () => ({
       ],
       "url": '/courses',
       "items": [
-        'WebScraping'
+        {
+          "id": 1,
+          "title": "Practical Python: Webscraping",
+          "level": "Beginners",
+          "decription": "The course aims to answer a question: What to do next? After a beginner completes any Python tutorial",
+          "videos": 16,
+          "duration": "3 hours"
+        }
       ]
     },
   ]
 })
+
+export const getters = {
+  getCoursesTier: (state) => () => {
+    return state.tiers.find(tier => tier.title === 'Courses')
+  }
+}

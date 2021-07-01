@@ -17,17 +17,4 @@
 </script>
 
 <style scoped>
-  .hero {
-    padding: 7rem 0 4rem 0;
-  }
-  .hero-header {
-    font-weight: 700;
-    font-size: 3rem;
-  }
-  .hero-subheader {
-    font-size: 1.6rem;
-  }
-  .hero-description {
-    font-size: 1.3rem;
-  }
 </style>
