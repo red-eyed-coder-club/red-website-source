@@ -4,7 +4,7 @@ body {
 }
 
 .hero {
-  padding: 7rem 0 4rem 0;
+  padding: 8rem 0 6rem 0;
 }
 
 .hero-header {
@@ -18,4 +18,13 @@ body {
 
 .hero-description {
   font-size: 1.3rem;
+}
+
+code {
+  background-color: #f5f9fb;
+  border-radius: 4px;
+  font-size: 80%;
+  padding: .2538rem .5167rem .3875rem;
+  position: relative;
+  top: -.1rem;
 }

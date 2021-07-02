@@ -135,7 +135,8 @@ export const state = () => ({
           "description": "The course aims to answer a question: What to do next? After a beginner completes any Python tutorial.",
           "videos": 16,
           "duration": "3 hours",
-          "accessible": true
+          "accessible": true,
+          "subtitle": "",
         },
         {
           "id": 2,

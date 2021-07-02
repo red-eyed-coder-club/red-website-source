@@ -1,5 +1,5 @@
 <template>
-  <div class="card col-4">
+  <NuxtLink :to="`/courses/${courseInfo.slug}`" class="card col-4">
     <div class="card-body d-flex flex-column text-left">
       <h2 class="card-text card-title my-4">
         {{ courseInfo.title }}
@@ -18,7 +18,7 @@
     <div class="card-footer text-muted">
       {{ courseInfo.level }}
     </div>
-  </div>
+  </NuxtLink>
 </template>
 
 <script>

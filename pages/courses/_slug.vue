@@ -1,6 +1,8 @@
 <template>
   <div>
-    aslfdjl
+    <div class="hero">
+      <h1>Web scraping</h1>
+    </div>
   </div>
 </template>
 
