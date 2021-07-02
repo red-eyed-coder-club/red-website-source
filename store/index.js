@@ -129,12 +129,24 @@ export const state = () => ({
       "items": [
         {
           "id": 1,
-          "title": "Practical Python: Webscraping",
+          "title": "Practical Python: Web Scraping",
+          "slug": "practical-python-web-scraping",
           "level": "Beginners",
-          "decription": "The course aims to answer a question: What to do next? After a beginner completes any Python tutorial",
+          "description": "The course aims to answer a question: What to do next? After a beginner completes any Python tutorial.",
           "videos": 16,
-          "duration": "3 hours"
-        }
+          "duration": "3 hours",
+          "accessible": true
+        },
+        {
+          "id": 2,
+          "title": "Logging in Python",
+          "slug": "loggin-in-python",
+          "level": "Intermediate",
+          "description": "How to use logging in Python",
+          "videos": 6,
+          "duration": "1.5 hours",
+          "accessible": false
+        },
       ]
     },
   ]
@@ -143,5 +155,10 @@ export const state = () => ({
 export const getters = {
   getCoursesTier: (state) => () => {
     return state.tiers.find(tier => tier.title === 'Courses')
+  },
+
+  getCourseBySlug: (state) => (slug) => {
+    const courses = this.getCoursesTier()
+    return courses.find(course => course.slug === slug)
   }
 }
