@@ -247,7 +247,6 @@
     font-size: 1.2rem;
   }
 
-
   .faq-wrapper {
     background: #f9fbff !important;
   }
