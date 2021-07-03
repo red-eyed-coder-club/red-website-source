@@ -34,7 +34,7 @@
           </p>
         </div>
         <div class="image-wrapper mt-5">
-          <img src="@/assets/images/knowledge_experience.jpg" alt="" class="ml-5 mx-auto px-2">
+          <img src="@/assets/images/knowledge_experience.jpg" alt="" class="ml-5 mx-auto px-2 picture">
         </div>
 
       </section>
@@ -249,6 +249,23 @@
 
   .faq-wrapper {
     background: #f9fbff !important;
+  }
+
+  @media (max-width: 1620px) {
+    .sidebar {
+      display: none;
+    }
+  }
+
+  @media(max-width: 870px) {
+    .image-wrapper {
+      width: 100%;
+      margin: 1rem auto;
+    }
+
+    .picture {
+      width: 80%;
+    }
   }
 
 </style>
