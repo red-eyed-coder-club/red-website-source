@@ -6,11 +6,13 @@
 
         <h2 class="subheader my-4">Turn your knowledge of Python basics into a skill</h2>
 
-        <div class="hero-meta my-4">
+        <div class="hero-meta my-4 mb-5">
           3 hrs | 16 videos
         </div>
 
-        <PatreonButton />
+        <PatreonButton
+          :textButton="`Get Access`"
+        />
       </div>
 
       <section class="about text-left justify-content-center">
@@ -39,16 +41,52 @@
         <h2>Why Web Scraping?</h2>
 
         <p>
-          Becase it's relatively simple task.
-          It's fit for complete beginners in Python development.
+          Because it's relatively simple task, which fits for complete beginners in Python development.
+        </p>
+        <p>
+          It's the next step in your progress as a Python developer. All your further knowledge and experience will be built upon the skill you'll get as the result of this course.
         </p>
         <p>
           And also Web Scraping allow to earn money. That's right you will be able to earn some money with your Python Web Scraping skills.
         </p>
       </section>
 
-      <section class="resume">
-        3 hours 16 videos
+      <section class="course-traits row justify-content-center">
+        <div class="col-md-5">
+          <h2 class="mb-3">3</h2>
+          <h3>hours</h3>
+        </div>
+        <div class="col-md-5">
+          <h2 class="mb-3">16</h2>
+          <h3>videos</h3>
+        </div>
+      </section>
+
+      <section class="course-index text-left">
+        <h2>Index of Course</h2>
+        <!-- <table class="table table-hover">
+          <tbody>
+            <tr v-for="(video, index) in courseInfo.map" :key="index">
+              <td>
+                <a :href="video.patreon_url">{{ video.title }}</a>
+              </td>
+              <td>{{ video.duration }}</td>
+            </tr>
+          </tbody>
+        </table> -->
+        <div>
+          <div v-for="(video, index) in courseInfo.map" :key="index">
+            <a :href="video.patreon_url" class="row justify-content-between video-link">
+              <div>
+                <span class="video-link-icon">
+                  <font-awesome-icon :icon="['fab','youtube']" />
+                </span>
+                {{ video.title }}
+              </div>
+              <div>{{ video.duration }}</div>
+            </a>
+          </div>
+        </div>
       </section>
 
       <section class="covered-topics text-left">
@@ -86,7 +124,7 @@
 
       <section class="for-whom text-left">
         <h2>For whom</h2>
-        <p>The Practical Python: Web scraping course fit for beginners who elaborated any Python tutorial.</p>
+        <p>The Course fits for beginners who elaborated any Python tutorial.</p>
       </section>
 
       <section class="prerequisites text-left">
@@ -102,15 +140,28 @@
       <section class="faq text-left">
         <h2>FAQ</h2>
 
+      </section>
 
+      <section class="faq text-left">
+        <h2>Price</h2>
+        <div class="text-center row justify-content-center">
+          <CourseOfferCard
+            :courseInfo="courseInfo"
+          />
+        </div>
       </section>
 
     </div>
 </template>
 
 <script>
-  export default {
+  import { mapState } from 'vuex'
 
+  export default {
+    computed: mapState({
+      courseInfo: state => state.tiers.find(tier => tier.title === 'Courses'
+      ).items.find(course => course.slug === 'practical-python-web-scraping')
+    })
   }
 </script>
 
@@ -129,9 +180,23 @@
     color: #38416f;
   }
 
-  section.resume {
+  .course-traits {
     margin: 10rem 0;
     width: 100%;
+    background: #f9fbff;
+    width: 80%;
+    margin: 5rem auto;
+    padding: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 10px;
+  }
+
+  .course-traits h2 {
+    font-size: 5rem;
+  }
+
+  .course-traits h3 {
+    font-size: 2rem;
   }
 
   .about span {
@@ -147,5 +212,19 @@
     box-shadow: 0 10px 30px rgba(0,0,0,.2);
     width: min-content;
     margin: 1rem auto;
+  }
+  .video-link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 0;
+  }
+  .video-link:hover {
+    background: #f9fbff;
+  }
+
+  .video-link-icon {
+    margin-right: 0.5rem;
+    color: #dd2e44;
   }
 </style>

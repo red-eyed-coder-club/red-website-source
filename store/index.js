@@ -123,7 +123,7 @@ export const state = () => ({
       "items-quantity": 1,
       "price": 20,
       "includes": [
-        "+ Source Code"
+        "+ Source Code Tier"
       ],
       "url": '/courses',
       "items": [
@@ -137,6 +137,88 @@ export const state = () => ({
           "duration": "3 hours",
           "accessible": true,
           "subtitle": "",
+          "map": [
+            {
+              "title": "0. Preparation",
+              "duration": "02:11",
+              "patreon_url": "https://www.patreon.com/posts/53207854/"
+            },
+            {
+              "title": "1. Basic example of scraping",
+              "duration": "11:41",
+              "patreon_url": "https://www.patreon.com/posts/53207853/"
+            },
+            {
+              "title": "2. Scraping multiple data",
+              "duration": "18:08",
+              "patreon_url": "https://www.patreon.com/posts/53207852/"
+            },
+            {
+              "title": "3. Scraping tables",
+              "duration": "13:17",
+              "patreon_url": "https://www.patreon.com/posts/53207849/"
+            },
+            {
+              "title": "4. Scraping websites with pagination: method 1",
+              "duration": "14:20",
+              "patreon_url": "https://www.patreon.com/posts/53207848/"
+            },
+            {
+              "title": "5. Scraping websites with pagination: method 2",
+              "duration": "14:36",
+              "patreon_url": "https://www.patreon.com/posts/53207847/"
+            },
+            {
+              "title": "6. BeautifulSoup: search options",
+              "duration": "15:44",
+              "patreon_url": "https://www.patreon.com/posts/53207845/"
+            },
+            {
+              "title": "7. How to read and write into CSV files",
+              "duration": "08:27",
+              "patreon_url": "https://www.patreon.com/posts/53207844/"
+            },
+            {
+              "title": "8. Saving data to PostgreSQL with PeeWee library",
+              "duration": "11:10",
+              "patreon_url": "https://www.patreon.com/posts/53207843/"
+            },
+            {
+              "title": "9. Task 1: scraping JQuery driven website with infinite page",
+              "duration": "03:16",
+              "patreon_url": "https://www.patreon.com/posts/53207842/"
+            },
+            {
+              "title": "10. How to use multi-threading",
+              "duration": "23:57",
+              "patreon_url": "https://www.patreon.com/posts/53207841/"
+            },
+            {
+              "title": "11. How to use multi-processing",
+              "duration": "18:15",
+              "patreon_url": "https://www.patreon.com/posts/53207840/"
+            },
+            {
+              "title": "12. How to change User-Agent",
+              "duration": "05:08",
+              "patreon_url": "https://www.patreon.com/posts/53207838/"
+            },
+            {
+              "title": "13. How to use Proxies",
+              "duration": "05:02",
+              "patreon_url": "https://www.patreon.com/posts/53207836/"
+            },
+            {
+              "title": "14. Scraping JQuery driven websites",
+              "duration": "13:07",
+              "patreon_url": "https://www.patreon.com/posts/53207833/"
+            },
+            {
+              "title": "15. Conclusion",
+              "duration": "02:43",
+              "patreon_url": "https://www.patreon.com/posts/53207715/"
+            }
+          ]
         },
         {
           "id": 2,
@@ -158,8 +240,8 @@ export const getters = {
     return state.tiers.find(tier => tier.title === 'Courses')
   },
 
-  getCourseBySlug: (state) => (slug) => {
-    const courses = this.getCoursesTier()
-    return courses.find(course => course.slug === slug)
+  getCourseBySlug: (state, getters) => (slug) => {
+    const courses = getters.getCoursesTier()
+    return courses.items.find(course => course.slug === slug)
   }
 }

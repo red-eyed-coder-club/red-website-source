@@ -1,19 +1,18 @@
 <template>
     <div class="get-access-button">
-      <button class="btn btn-danger patreon-button">Get Access</button>
+      <a href="https://www.patreon.com/red_eyed_coder_club" class="btn btn-danger patreon-button">{{ textButton }}</a>
     </div>
 </template>
 
 <script>
   export default {
-
+    props: [
+      'textButton'
+    ]
   }
 </script>
 
 <style scoped>
-  .get-access-button {
-    margin: 5rem 0 0 0;
-  }
   .patreon-button {
     padding: 0.8rem 3.8rem;
     border-radius: 10px;
