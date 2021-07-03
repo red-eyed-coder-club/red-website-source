@@ -218,6 +218,28 @@ export const state = () => ({
               "duration": "02:43",
               "patreon_url": "https://www.patreon.com/posts/53207715/"
             }
+          ],
+          "faq": [
+            {
+              "question": "What scraping tools are used during the Course?",
+              "answer": "In this course I use Requests, BeautifulSoup and LXML libraries only."
+            },
+            {
+              "question": "How to install Requests, BeautifulSoup and Lxml?",
+              "answer": "To install them you can use PIP: <br> <code>pip install requests bs4 lxml</code>"
+            },
+            {
+              "question": "I got an <code>AttributeError: 'NoneType' object has no attribute...</code>",
+              "answer": "This error (exception) was raised, because of the object, which attribute you tried to use, got the NoneType object as the value. Practically it means that BeautifulSoup didn't find a tag you tried to find, and return None.<br>Try to check what BeautifulSoup returned by your request."
+            },
+            {
+              "question": "Is your feedback provided?",
+              "answer": "No. It's my principled position. At the beginning you need to gain experience as much as possible. And this is possible only with sufficient efforts from the student.<br><br>The presence of somebody nearby who is ready at any time to tell you why something doesn't work eleminates you from the analysis and the necessary efforts."
+            },
+            {
+              "question": "Is the course provided only via Patreon?",
+              "answer": "That's right. At present moment I use only Patreon. If you will see the course on any other platform it means that it was stolen and published there with violation of copyright laws and DMCA."
+            },
           ]
         },
         {

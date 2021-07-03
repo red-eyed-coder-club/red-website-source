@@ -15,7 +15,9 @@
         />
       </div>
 
-      <section class="about text-left justify-content-center">
+      <Sidebar />
+
+      <section class="about text-left justify-content-center" id="about">
         <div class="about-content">
           <h2>What is this course about?</h2>
 
@@ -37,7 +39,7 @@
 
       </section>
 
-      <section class="why text-left">
+      <section class="why text-left" id="why">
         <h2>Why Web Scraping?</h2>
 
         <p>
@@ -62,18 +64,9 @@
         </div>
       </section>
 
-      <section class="course-index text-left">
+      <section class="course-index text-left" id="index">
         <h2>Index of Course</h2>
-        <!-- <table class="table table-hover">
-          <tbody>
-            <tr v-for="(video, index) in courseInfo.map" :key="index">
-              <td>
-                <a :href="video.patreon_url">{{ video.title }}</a>
-              </td>
-              <td>{{ video.duration }}</td>
-            </tr>
-          </tbody>
-        </table> -->
+
         <div>
           <div v-for="(video, index) in courseInfo.map" :key="index">
             <a :href="video.patreon_url" class="row justify-content-between video-link">
@@ -89,7 +82,7 @@
         </div>
       </section>
 
-      <section class="covered-topics text-left">
+      <section class="covered-topics text-left" id="python">
         <h2>Covered Python topics</h2>
         <ul>
           <li>The <code>if __name__ == '__main__'</code> - what is it and how to use it</li>
@@ -106,7 +99,7 @@
         </ul>
       </section>
 
-      <section class="covered-topics text-left">
+      <section class="covered-topics text-left" id="scraping">
         <h2>Covered Web Scraping topics</h2>
         <ul>
           <li>Using of Requests library and BeatifulSoup</li>
@@ -122,12 +115,12 @@
       </section>
 
 
-      <section class="for-whom text-left">
+      <section class="for-whom text-left" id="for-whom">
         <h2>For whom</h2>
         <p>The Course fits for beginners who elaborated any Python tutorial.</p>
       </section>
 
-      <section class="prerequisites text-left">
+      <section class="prerequisites text-left" id="prerequisites">
         <h2>Prerequisites</h2>
         <ul>
           <li>Basics of Python</li>
@@ -137,12 +130,25 @@
       </section>
 
 
-      <section class="faq text-left">
+      <section class="faq text-left" id="faq">
         <h2>FAQ</h2>
-
+        <div class="faq-wrapper">
+          <div class="accordion" role="tablist">
+            <b-card no-body class="mb-1" v-for="(item, index) in courseInfo.faq" :key="index">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button class="text-left" block v-b-toggle="`accordion-${index}`" variant="light" v-html="item.question"></b-button>
+              </b-card-header>
+              <b-collapse :id="`accordion-${index}`" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  <b-card-text v-html="item.answer"></b-card-text>
+                </b-card-body>
+              </b-collapse>
+            </b-card>
+          </div>
+        </div>
       </section>
 
-      <section class="faq text-left">
+      <section class="text-left" id="price">
         <h2>Price</h2>
         <div class="text-center row justify-content-center">
           <CourseOfferCard
@@ -160,7 +166,7 @@
   export default {
     computed: mapState({
       courseInfo: state => state.tiers.find(tier => tier.title === 'Courses'
-      ).items.find(course => course.slug === 'practical-python-web-scraping')
+        ).items.find(course => course.slug === 'practical-python-web-scraping'),
     })
   }
 </script>
@@ -227,4 +233,23 @@
     margin-right: 0.5rem;
     color: #dd2e44;
   }
+
+  .accordion {
+    background: #f9fbff !important;
+  }
+
+  .accordion .card-header {
+    background: #f9fbff !important;
+  }
+
+  .accordion .card-header button{
+    background: #f9fbff !important;
+    font-size: 1.2rem;
+  }
+
+
+  .faq-wrapper {
+    background: #f9fbff !important;
+  }
+
 </style>
