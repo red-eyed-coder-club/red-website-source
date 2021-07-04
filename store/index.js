@@ -221,6 +221,10 @@ export const state = () => ({
           ],
           "faq": [
             {
+              "question": "Any preview?",
+              "answer": "I have a <a href='https://www.youtube.com/channel/UCh_LSaTv2GeZ3woJNTGihew'>Youtube channel</a>, and you can watch my videos there. If you'll like my Youtube videos, you will probably like this course."
+            },
+            {
               "question": "What scraping tools are used during the Course?",
               "answer": "In this course I use Requests, BeautifulSoup and LXML libraries only."
             },
