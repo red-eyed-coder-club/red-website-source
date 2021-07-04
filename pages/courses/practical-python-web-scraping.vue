@@ -30,7 +30,7 @@
             So if your are asked this question, this course is for you.
           </p>
           <p>
-            During this course you will apply your Python knowledge to solve various programmers tasks.
+            During this course you will apply your Python knowledge, solving various programing tasks to achieve Web Scraping goals.
           </p>
         </div>
         <div class="image-wrapper mt-5">
@@ -41,15 +41,17 @@
 
       <section class="why text-left" id="why">
         <h2>Why Web Scraping?</h2>
-
         <p>
-          Because it's relatively simple task, which fits for complete beginners in Python development.
+          First of all, Web Scraping is an automated gathering data from websites.
         </p>
         <p>
-          It's the next step in your progress as a Python developer. All your further knowledge and experience will be built upon the skill you'll get as the result of this course.
+          It's a relatively simple programming task, which fits for complete beginners in Python development.
         </p>
         <p>
-          And also Web Scraping allow to earn money. That's right you will be able to earn some money with your Python Web Scraping skills.
+          It's the next step in your progress as a Python developer, if you completed any Python tutorial. All your further knowledge and experience will be built upon the skill you'll get as the result of this course.
+        </p>
+        <p>
+          And also Web Scraping allows to earn money. That's right! Eou will be able to earn some money with your Python Web Scraping skills.
         </p>
       </section>
 

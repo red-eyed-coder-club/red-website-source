@@ -234,11 +234,11 @@ export const state = () => ({
             },
             {
               "question": "I got an <code>AttributeError: 'NoneType' object has no attribute...</code>",
-              "answer": "This error (exception) was raised, because of the object, which attribute you tried to use, got the NoneType object as the value. Practically it means that BeautifulSoup didn't find a tag you tried to find, and return None.<br>Try to check what BeautifulSoup returned by your request."
+              "answer": "This error (exception) was raised, because of the object, which attribute you tried to use, got the <code>NoneType</code> object as the value. Practically it means that BeautifulSoup didn't find a tag you tried to find, and return <code>None</code>.<br>Try to check what BeautifulSoup returned by your request."
             },
             {
               "question": "Is your feedback provided?",
-              "answer": "No. It's my principled position. At the beginning you need to gain experience as much as possible. And this is possible only with sufficient efforts from the student.<br><br>The presence of somebody nearby who is ready at any time to tell you why something doesn't work eleminates you from the analysis and the necessary efforts."
+              "answer": "No. It's my principled position. At the beginning you need to gain experience as much as possible. And this is possible only with sufficient efforts from the student.<br><br>The presence of somebody nearby who is ready at any time to tell you why something doesn't work, eleminates you from the analysis and the necessary efforts."
             },
             {
               "question": "Is the course provided only via Patreon?",
