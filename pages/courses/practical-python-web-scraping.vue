@@ -72,7 +72,8 @@
             <a :href="video.patreon_url" class="row justify-content-between video-link">
               <div>
                 <span class="video-link-icon">
-                  <font-awesome-icon :icon="['fab','youtube']" />
+                  <!-- <font-awesome-icon :icon="['fab','youtube']" /> -->
+                  <span class="icon-youtube"></span>
                 </span>
                 {{ video.title }}
               </div>

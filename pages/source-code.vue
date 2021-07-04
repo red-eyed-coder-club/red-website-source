@@ -19,16 +19,14 @@
 
             <div class="row justify-content-start">
               <span class="video-link-icon">
-                <font-awesome-icon :icon="['fas','file-download']" />
+                <span class="icon-file-download"></span>
               </span>
               <a :href="sourceCode.code">{{ sourceCode.title }}</a>
             </div>
 
             <div class="">
                 <a class="btn youtube-button" :href="sourceCode.video">
-                  <span>
-                    <font-awesome-icon :icon="['fab','youtube']" />
-                  </span>
+                  <span class="icon-youtube"></span>
                   Watch Video
                 </a>
             </div>

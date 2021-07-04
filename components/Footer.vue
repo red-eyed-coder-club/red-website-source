@@ -5,11 +5,11 @@
         <div class="col-6 text-center mt-5 mb-4">
 
           <div class="footer-icons row justify-content-center mb-4">
-            <div class="icon icon-patreon">
-              <a href="https://www.patreon.com/red_eyed_coder_club"><font-awesome-icon :icon="['fab','patreon']" /></a>
+            <div class="icon i-patreon">
+              <a href="https://www.patreon.com/red_eyed_coder_club"><span class="icon-patreon"></span></a>
             </div>
-            <div class="icon icon-youtube">
-              <a href="https://www.youtube.com/channel/UCh_LSaTv2GeZ3woJNTGihew"><font-awesome-icon :icon="['fab','youtube']" /></a>
+            <div class="icon i-youtube">
+              <a href="https://www.youtube.com/channel/UCh_LSaTv2GeZ3woJNTGihew"><span class="icon-youtube"></span></a>
             </div>
           </div>
 
@@ -53,11 +53,13 @@
     font-size: 2rem;
   }
 
-  .icon-patreon a {
-    color: #ff4240;
+  .i-patreon a {
+    color: #ff424d;
+    text-decoration: none;
   }
 
-  .icon-youtube a {
+  .i-youtube a {
     color: red;
+    text-decoration: none;
   }
 </style>

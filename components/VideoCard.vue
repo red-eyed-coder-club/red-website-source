@@ -9,7 +9,7 @@
       </h2>
 
       <p class="card-meta">
-        <font-awesome-icon :icon="['fas','clock']" />
+        <span class="icon-clock2"></span>
         <span class="duration">{{ courseInfo.duration }}</span> |
         <span class="videos">{{ courseInfo.videos }} {{ courseInfo.videos > 1 ? 'videos' : 'video'}}</span>
       </p>
