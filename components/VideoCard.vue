@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="`/courses/${courseInfo.slug}`" class="card col-4">
+  <NuxtLink :to="`/courses/${courseInfo.slug}`" class="card">
     <div class="card-body d-flex flex-column text-left">
       <h2 class="card-text card-title my-4">
         {{ courseInfo.title }}
@@ -30,10 +30,10 @@
 </script>
 
 <style scoped>
-.col-4 {
+/* .col-4 {
   padding: 0;
   margin: 2rem;
-}
+} */
 
 h2 > span {
   font-size: 0.8rem;
@@ -43,10 +43,11 @@ h2 > span {
 .card {
   text-decoration: none;
   color: #333;
-  /* min-width: 20rem; */
+  min-width: 21rem;
   max-width: 25rem;
   background: #f9fbff;
   border-radius: 10px !important;
+  margin-bottom: 2rem;
 }
 
 .card-title {
@@ -76,4 +77,17 @@ span.videos {
 .card:hover {
   box-shadow: 0 .44rem .85rem rgba(0, 0, 0, .07);
 }
+
+@media (max-width: 375px) {
+  .card {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .card {
+    width: 18rem;
+  }
+}
+
 </style>

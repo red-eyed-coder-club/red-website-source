@@ -6,13 +6,14 @@
         <h4 class="subheader">The index page of all my courses</h4>
       </div>
 
-      <div class="row justify-content-center">
+      <div class="card-deck row justify-content-center">
 
         <VideoCard
           v-for="(course, index) in coursesTier.items"
           :key="index"
           :courseInfo="course"
         />
+        
       </div>
     </div>
 

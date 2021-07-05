@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'red-eyed-coder-club-website',
+    title: 'Red Eyed Coder Club',
     htmlAttrs: {
       lang: 'en'
     },

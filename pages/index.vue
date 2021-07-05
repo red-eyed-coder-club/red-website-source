@@ -2,7 +2,7 @@
   <div class="container">
     <Hero />
 
-    <div class="cards-wrapper d-flex justify-content-around">
+    <div class="card-deck row justify-content-center">
       <TierCard
         v-for="(tierCard, index) in tiers"
         :key="index"

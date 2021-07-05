@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- <div> -->
+    <b-navbar toggleable="lg" type="dark" variant="dark">
       <div class="container">
 
         <NuxtLink class="navbar-brand" to="/">
@@ -8,22 +8,16 @@
           Red Eyed Coder Club
         </NuxtLink>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
-            <li class="nav-item">
-              <NuxtLink class="nav-link active" aria-current="page" to="/courses">Courses</NuxtLink>
-            </li>
-            <li class="nav-item">
-              <NuxtLink class="nav-link" to="/source-code">Source Code</NuxtLink>
-            </li>
-          </ul>
-        </div>
+        <b-collapse id="nav-collapse" class="nav-right-links" is-nav>
+          <b-navbar-nav class="ml-auto">
+            <NuxtLink class="nav-link active" to="/courses">Courses</NuxtLink>
+            <NuxtLink class="nav-link" to="/source-code">Source Code</NuxtLink>
+          </b-navbar-nav>
+        </b-collapse>
       </div>
-    </nav>
+    </b-navbar>
   </div>
 </template>
 
@@ -34,5 +28,7 @@
 </script>
 
 <style scoped>
-  
+  .nav-right-links {
+    font-size: 1.2rem;
+  }
 </style>

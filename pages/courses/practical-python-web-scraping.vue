@@ -1,6 +1,6 @@
 <template>
 
-    <div class="col-9 mx-auto text-center">
+    <div class="main-content col-lg-9 col-md-11 col-sm-12 mx-auto text-center">
       <div class="hero">
         <h1 class="hero-header">Practical Python: <br> Web Scraping course</h1>
 
@@ -72,14 +72,17 @@
         <div>
           <div v-for="(video, index) in courseInfo.map" :key="index">
             <a :href="video.patreon_url" class="row justify-content-between video-link">
+
               <div>
                 <span class="video-link-icon">
-                  <!-- <font-awesome-icon :icon="['fab','youtube']" /> -->
                   <span class="icon-youtube"></span>
                 </span>
                 {{ video.title }}
               </div>
-              <div>{{ video.duration }}</div>
+
+              <div>
+                {{ video.duration }}
+              </div>
             </a>
           </div>
         </div>
@@ -254,9 +257,9 @@
     background: #f9fbff !important;
   }
 
-  @media (max-width: 1620px) {
-    .sidebar {
-      display: none;
+  @media(max-width: 576px) {
+    .main-content {
+      max-width: 90%;
     }
   }
 
@@ -271,4 +274,9 @@
     }
   }
 
+  @media (max-width: 1620px) {
+    .sidebar {
+      display: none;
+    }
+  }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="cardData.url" class="card col-4 text-center">
+  <NuxtLink :to="cardData.url" class="card text-center">
     <div class="card-header">
       <h3 class="card-title">{{ cardData.title }}</h3>
     </div>
@@ -25,13 +25,16 @@
 </script>
 
 <style scoped>
-  .col-4 {
+  /* .col-4 {
     padding: 0;
-  }
+  } */
   .card {
     text-decoration: none;
     color: #333;
+    min-width: 21rem;
+    max-width: 22rem;
   }
+
   .card .items {
     font-size: 2.5rem;
     font-weight: 800;
@@ -39,5 +42,11 @@
 
   .card:hover {
     box-shadow: 0 .44rem .85rem rgba(0, 0, 0, .07);
+  }
+
+  @media(max-width: 980px) {
+    .card {
+      margin-bottom: 4rem;
+    }
   }
 </style>
