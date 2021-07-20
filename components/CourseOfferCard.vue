@@ -8,7 +8,7 @@
         Access to this and all other current & future courses and source code!
       </h3>
 
-      <div class="price mt-3">$20/month</div>
+      <div class="price mt-3">$10/month</div>
       <p class="price-details">+ VAT added on checkout page</p>
 
       <p class="my-4">Cancel anytime!</p>

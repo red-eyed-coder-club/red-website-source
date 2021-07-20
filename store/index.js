@@ -121,7 +121,7 @@ export const state = () => ({
       "id": 2,
       "title": "Courses",
       "items-quantity": 1,
-      "price": 20,
+      "price": 10,
       "includes": [
         "+ Source Code Tier"
       ],

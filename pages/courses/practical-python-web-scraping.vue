@@ -27,7 +27,7 @@
           <p>
             If you are just finished some Python tutorial like Codecademy or similar, and asked yourself:
             <span class="question">"Ok, I finished it, but what to do next? How to apply my knowledge to a real task?"</span>
-            So if your are asked this question, this course is for you.
+            So if you asked this question, this course is for you.
           </p>
           <p>
             During this course you will apply your Python knowledge, solving various programing tasks to achieve Web Scraping goals.
@@ -51,7 +51,7 @@
           It's the next step in your progress as a Python developer, if you completed any Python tutorial. All your further knowledge and experience will be built upon the skill you'll get as the result of this course.
         </p>
         <p>
-          And also Web Scraping allows to earn money. That's right! Eou will be able to earn some money with your Python Web Scraping skills.
+          And also Web Scraping allows you to earn money. That's right! You will be able to earn some money with your Python Web Scraping skills.
         </p>
       </section>
 
@@ -131,7 +131,7 @@
         <ul>
           <li>Basics of Python</li>
           <li>Basics of HTML, CSS</li>
-          <li>Linux or Mac Os are preferable</li>
+          <li>Linux or Mac are preferable</li>
         </ul>
       </section>
 
