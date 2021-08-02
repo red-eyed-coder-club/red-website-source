@@ -249,13 +249,46 @@ export const state = () => ({
         {
           "id": 2,
           "title": "Logging in Python",
-          "slug": "loggin-in-python",
+          "slug": "practical-python-logging",
           "level": "Intermediate",
-          "description": "How to use logging in Python",
+          "description": "How to use the one of the most misunderstood and unclear modules in Python - the Logging module.",
           "videos": 6,
-          "duration": "1.5 hours",
-          "accessible": false
-        },
+          "duration": "1 hour 36 min",
+          "accessible": true,
+          "subtitle": "",
+          "map": [
+            {
+              "title": "1. Logging module design and simple logger",
+              "duration": "21:52",
+              "patreon_url": "https://www.patreon.com/posts/54381671"
+            },
+            {
+              "title": "2. Handling logger messages and loggers hierarchy",
+              "duration": "18:26",
+              "patreon_url": "https://www.patreon.com/posts/54381673"
+            },
+            {
+              "title": "3. Loggers' configuration",
+              "duration": "17:17",
+              "patreon_url": "https://www.patreon.com/posts/54381675"
+            },
+            {
+              "title": "4. Logging of exceptions",
+              "duration": "06:22",
+              "patreon_url": "https://www.patreon.com/posts/54381677"
+            },
+            {
+              "title": "5. Using of filters",
+              "duration": "14:35",
+              "patreon_url": "https://www.patreon.com/posts/54381679"
+            },
+            {
+              "title": "6. Using of custom handlers and Telegram bot",
+              "duration": "17:31",
+              "patreon_url": "https://www.patreon.com/posts/54381680"
+            }
+          ]
+        }
       ]
     },
   ]
