@@ -1,6 +1,6 @@
 <template>
     <div class="get-access-button">
-      <a href="https://www.patreon.com/red_eyed_coder_club" class="btn btn-danger patreon-button">{{ textButton }}</a>
+      <a href="https://www.patreon.com/red_eyed_coder_club" class="btn btn-danger patreon-button" target="_blank">{{ textButton }}</a>
     </div>
 </template>
 
