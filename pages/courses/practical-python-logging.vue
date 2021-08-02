@@ -15,7 +15,9 @@
         />
       </div>
 
-      <Sidebar />
+      <Sidebar
+        :courseInfo="courseInfo"
+      />
 
       <section class="about text-left justify-content-center" id="about">
         <div class="about-content">
@@ -77,7 +79,7 @@
         </div>
       </section>
 
-      <section class="covered-topics text-left" id="python">
+      <section class="covered-topics text-left" id="topics">
         <h2>Covered topics</h2>
         <ul>
           <li>Design of the Logging module, and logger</li>
@@ -102,25 +104,6 @@
           <li>Understanding of Python classes, inheritance, methods overriding</li>
           <li>Linux or Mac are preferable</li>
         </ul>
-      </section>
-
-
-      <section class="faq text-left" id="faq">
-        <h2>FAQ</h2>
-        <div class="faq-wrapper">
-          <div class="accordion" role="tablist">
-            <b-card no-body class="mb-1" v-for="(item, index) in courseInfo.faq" :key="index">
-              <b-card-header header-tag="header" class="p-1" role="tab">
-                <b-button class="text-left" block v-b-toggle="`accordion-${index}`" variant="light" v-html="item.question"></b-button>
-              </b-card-header>
-              <b-collapse :id="`accordion-${index}`" accordion="my-accordion" role="tabpanel">
-                <b-card-body>
-                  <b-card-text v-html="item.answer"></b-card-text>
-                </b-card-body>
-              </b-collapse>
-            </b-card>
-          </div>
-        </div>
       </section>
 
       <section class="text-left" id="price">

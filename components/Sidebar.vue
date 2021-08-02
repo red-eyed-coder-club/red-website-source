@@ -1,24 +1,18 @@
 <template>
   <div class="sidebar">
     <ul class="text-left">
-      <li>
-        <a href="/courses/practical-python-web-scraping#about">About</a>
+      <li v-for="(section, index) in courseInfo.sections" :key="index">
+        <a :href="`/courses/${courseInfo.slug}#${section.ref}`">{{section.title}}</a>
       </li>
-      <li><a href="/courses/practical-python-web-scraping#why">Why Web Scraping</a></li>
-      <li><a href="/courses/practical-python-web-scraping#index">Index</a></li>
-      <li><a href="/courses/practical-python-web-scraping#python">Covered Python topics</a></li>
-      <li><a href="/courses/practical-python-web-scraping#scraping">Covered Web Scraping topics</a></li>
-      <li><a href="/courses/practical-python-web-scraping#for-whom">For Whom</a></li>
-      <li><a href="/courses/practical-python-web-scraping#prerequisites">Prerequisites</a></li>
-      <li><a href="/courses/practical-python-web-scraping#faq">FAQ</a></li>
-      <li><a href="/courses/practical-python-web-scraping#price">Price</a></li>
     </ul>
   </div>
 </template>
 
 <script>
   export default {
-
+    props: [
+      'courseInfo'
+    ]
   }
 </script>
 

@@ -15,7 +15,9 @@
         />
       </div>
 
-      <Sidebar />
+      <Sidebar
+        :courseInfo="courseInfo"
+      />
 
       <section class="about text-left justify-content-center" id="about">
         <div class="about-content">

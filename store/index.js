@@ -137,6 +137,44 @@ export const state = () => ({
           "duration": "3 hours",
           "accessible": true,
           "subtitle": "",
+          "sections": [
+            {
+              "ref": "about",
+              "title": "About"
+            },
+            {
+              "ref": "why",
+              "title": "Why Web Scraping"
+            },
+            {
+              "ref": "index",
+              "title": "Index"
+            },
+            {
+              "ref": "python",
+              "title": "Covered Python topics"
+            },
+            {
+              "ref": "scraping",
+              "title": "Covered Web Scraping topics"
+            },
+            {
+              "ref": "for-whom",
+              "title": "For Whom"
+            },
+            {
+              "ref": "prerequisites",
+              "title": "Prerequisites"
+            },
+            {
+              "ref": "faq",
+              "title": "FAQ"
+            },
+            {
+              "ref": "price",
+              "title": "Price"
+            },
+          ],
           "map": [
             {
               "title": "0. Preparation",
@@ -256,6 +294,32 @@ export const state = () => ({
           "duration": "1 hour 36 min",
           "accessible": true,
           "subtitle": "",
+          "sections": [
+            {
+              "ref": "about",
+              "title": "About"
+            },
+            {
+              "ref": "index",
+              "title": "Index"
+            },
+            {
+              "ref": "topics",
+              "title": "Covered topics"
+            },
+            {
+              "ref": "for-whom",
+              "title": "For Whom"
+            },
+            {
+              "ref": "prerequisites",
+              "title": "Prerequisites"
+            },
+            {
+              "ref": "price",
+              "title": "Price"
+            },
+          ],
           "map": [
             {
               "title": "1. Logging module design and simple logger",
