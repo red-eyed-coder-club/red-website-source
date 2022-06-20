@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto text-center hero">
     <h1 class="hero-header">Patreon Index</h1>
-    <h4 class="hero-subheader">Patreon has extremely bad UX, so I made this Index page.</h4>
+    <h4 class="hero-subheader">The Index page of Patreon tiers of Red Eyed Coder Club channel content</h4>
 
     <p class="hero-description mt-5">
       My Patrons can have access to <NuxtLink to="/source-code"><strong>Source Code</strong></NuxtLink> of all my projects,<br>
