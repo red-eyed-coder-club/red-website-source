@@ -8,6 +8,48 @@ export const state = () => ({
       "url": "/source-code",
       "items": [
         {
+          "id": 26,
+          "title": "PyScript and Django: How to submit form and validate on Django side",
+          "code": "",
+          "video": "https://youtu.be/XrumcxMEJ8k",
+        },
+        {
+          "id": 25,
+          "title": "Python Flask Upload and Display Image",
+          "code": "https://www.patreon.com/posts/68005058",
+          "video": "https://youtu.be/dP-2NVUgh50",
+        },
+        {
+          "id": 24,
+          "title": "PyScript and Django: Basic PyScript Frontend and DOM manipulations",
+          "code": "https://www.patreon.com/posts/68004987",
+          "video": "https://youtu.be/zw4V48Al8LU",
+        },
+        {
+          "id": 23,
+          "title": "PyScript and Flask: Basic PyScript Frontend and DOM",
+          "code": "https://www.patreon.com/posts/68004918",
+          "video": "https://youtu.be/WZRNbspsjFM",
+        },
+        {
+          "id": 22,
+          "title": "Flask AJAX Tutorial: Basic AJAX in Flask app",
+          "code": "https://www.patreon.com/posts/flask-ajax-basic-65896482",
+          "video": "https://youtu.be/nF9riePnm80"
+        },
+        {
+          "id": 21,
+          "title": "Golang Goquery Tutorial: How to scrape Ebay with Golang Goquery",
+          "code": "https://www.patreon.com/posts/68004760",
+          "video": "https://youtu.be/mS74M-rnc90",
+        },
+        {
+          "id": 20,
+          "title": "Golang tutorial: How to scrape websites with Golang & Goquery [Techcrunch]",
+          "code": "https://www.patreon.com/posts/68004649",
+          "video": "https://youtu.be/4VIoT50mzzo",
+        },
+        {
           "id": 19,
           "title": "Python Flask and Vue.js tutorial - TODO app project",
           "code": "https://www.patreon.com/posts/flask-2-vue-js-54892532",
