@@ -10,7 +10,7 @@ export const state = () => ({
         {
           "id": 26,
           "title": "PyScript and Django: How to submit form and validate on Django side",
-          "code": "",
+          "code": "https://www.patreon.com/posts/pyscript-and-how-68005194",
           "video": "https://youtu.be/XrumcxMEJ8k",
         },
         {
@@ -99,7 +99,7 @@ export const state = () => ({
         },
         {
           "id": 11,
-          "title": "Django 3 TODO app with Vue.js",
+          "title": "Django TODO app with Vue.js (AJAX via Axios)",
           "code": "https://www.patreon.com/posts/django-3-todo-js-36737726",
           "video": "https://www.youtube.com/watch?v=xq532yn8gMA"
         },
@@ -129,7 +129,7 @@ export const state = () => ({
         },
         {
           "id": 6,
-          "title": "Django 3 Tutorial Blog Engine",
+          "title": "Django Tutorial: Blog Engine",
           "code": "https://www.patreon.com/posts/django-3-blog-34240101",
           "video": "https://www.youtube.com/playlist?list=PLe4mIUXfbIqbbqgDSY6z9orgzIwvYZjtw"
         },
@@ -320,7 +320,7 @@ export const state = () => ({
             },
             {
               "question": "I got an <code>AttributeError: 'NoneType' object has no attribute...</code>",
-              "answer": "This error (exception) was raised, because of the object, which attribute you tried to use, got the <code>NoneType</code> object as the value. Practically it means that BeautifulSoup didn't find a tag you tried to find, and return <code>None</code>.<br>Try to check what BeautifulSoup returned by your request."
+              "answer": "This error (exception) was raised, because of the object, which attribute you tried to use, got the <code>NoneType</code> object as the value. Practically it means that BeautifulSoup didn't find a tag you tried to find, and returned <code>None</code>.<br>Try to check what BeautifulSoup returned by your request."
             },
             {
               "question": "Is your feedback provided?",
