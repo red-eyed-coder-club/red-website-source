@@ -8,6 +8,18 @@ export const state = () => ({
       "url": "/source-code",
       "items": [
         {
+          "id": 28,
+          "title": "Learn Alpine js in practice #1: get data from API",
+          "video": "https://youtu.be/ZotEIc9H4Uc",
+          "code": "https://www.patreon.com/posts/69077491",
+        },
+        {
+          "id": 27,
+          "title": "Django AJAX Tutorial: Basic AJAX in Django app with Fetch API",
+          "video": "https://youtu.be/S2gkqC1fmbA",
+          "code": "https://www.patreon.com/posts/69077376",
+        },
+        {
           "id": 26,
           "title": "PyScript and Django: How to submit form and validate on Django side",
           "code": "https://www.patreon.com/posts/pyscript-and-how-68005194",
